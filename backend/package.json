@@ -7,9 +7,6 @@
   "scripts": {
     "server": "nodemon server.js"
   },
-  "scripts": {
-  "prestart": "if [ \"$RENDER\" = \"true\" ]; then npm rebuild bcrypt; fi"
-},
   "author": "",
   "license": "ISC",
   "dependencies": {
