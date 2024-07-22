@@ -1,0 +1,119 @@
+.Header{
+    height: 35vw;
+margin: 50px 70px;
+    position: relative;
+    background: url('/header_img.png') no-repeat;
+    background-size: contain;
+}
+.header-content{
+    position: absolute;
+    max-width: 50%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1.5vw;
+    bottom: 10%;
+    left: 5vw;
+    animation: fadein 3s;
+}
+.header-content h2{
+    font-weight: 500;
+    font-size:max(4.5vw,22px);
+    color: white;
+}
+.header-content p{
+    color: white;
+    /* font-size: 1vw; */
+}
+.header-content button{
+    border: none;
+    font-weight: 500;
+    padding:1vw 2.3vw;
+    font-size: max(1vw,18px);
+    border-radius: 40px;
+}
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .Header {
+        height: 30vw;
+    }
+
+    .header-content {
+        max-width: 65%;
+        bottom: 5%;
+    }
+    .header-content h2 {
+        font-size: max(4vw, 18px);
+    }
+
+    .header-content p {
+       font-size: 1.5vw;
+    }
+
+    .header-content button {
+        padding: 1.5vw 3vw;
+        font-size: max(1vw, 10px);
+    }
+}
+
+@media (max-width: 750px) {
+    .Header {
+        height: 40vw;
+        margin: 30px 40px;
+    }
+
+    .header-content {
+        max-width: 65%;
+        bottom: 24%;
+        left: 5vw;
+    }
+
+    .header-content h2 {
+        font-size: max(5vw, 18px);
+    }
+
+    .header-content p {
+        display: none;
+    }
+
+    .header-content button {
+        padding: 1.5vw 3vw;
+        font-size: max(1vw, 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .Header {
+        height: 60vw;
+        margin: 20px 30px;
+        background-size: cover;
+    }
+
+    .header-content {
+        max-width: 80%;
+        bottom: 10%;
+        left: 5vw;
+    }
+
+    .header-content h2 {
+        font-size: max(6vw, 16px);
+    }
+
+    .header-content p {
+        font-size: 2vw;
+    }
+
+    .header-content button {
+        padding: 2vw 4vw;
+        font-size: max(2vw, 12px);
+    }
+}

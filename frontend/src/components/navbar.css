@@ -1,0 +1,172 @@
+.main-Nav{
+    width: 100%;
+    background-color: rgb(217, 216, 216);
+    /* position: sticky;
+    top: 0;
+    z-index: 1000;  */
+}
+.navbar{
+    padding: 10px 0px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-left .logo{
+  width: 100px;
+  margin-left: 30px;
+  overflow: hidden;
+}
+.navbar-center ul{
+display: flex;
+list-style: none;
+gap: 40px;
+color: #49557e;
+font-size: 18px;
+}
+.navbar-right{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+.navbar-right .button{
+    border-radius: 50px;
+    font-size: 16px;
+background: transparent;
+padding: 10px 30px;
+color: #49557e;
+cursor: pointer;
+transition: 0.3s;
+border: 1px solid tomato;
+}
+.navbar-right .button:hover{
+background-color: #fff4f2;
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom:2px solid #495573;
+}
+.navbar li{
+    cursor: pointer;
+}
+.basket{
+    position: relative;
+}
+.basket .dot{
+position:absolute;
+min-width: 10px;
+min-height: 10px;
+border-radius: 5px;
+background-color: tomato;
+top: -8px;
+right: -8px;
+}
+.navbar-profile{
+    position: relative;
+}
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index:1 ;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    list-style: none;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+}
+.nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.nav-profile-dropdown img{
+    width: 30px;
+}
+.nav-profile-dropdown li:hover{
+    color: tomato;
+}
+
+@media (max-width: 1024px) {
+
+    .navbar-left .logo {
+        width: 70px;
+        margin-left: 20px;
+    }
+
+    .navbar-center ul {
+        gap: 30px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 40px;
+    }
+
+    .navbar-right .button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-left .logo {
+        width: 50px;
+        margin-left: 10px;
+    }
+
+    .navbar-center ul {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right .button {
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+.navbar{
+    width: 100%;
+}
+    .navbar-left .logo {
+        width: 30px;
+        margin-left: 5px;
+    }
+
+    .navbar-center ul {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .navbar-right {
+        gap: 0px;
+    }
+
+    .navbar-right .button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .navbar-right {
+        gap: 10px;
+    }
+    .basket img{
+        width: 20px;
+    }
+    .search{
+        width: 20px;
+    }
+}

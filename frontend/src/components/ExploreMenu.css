@@ -1,0 +1,111 @@
+.ExploreMenu{
+display: flex;
+flex-direction: column;
+gap: 1.5vw;
+}
+.ExploreMenu h2{
+font-size: 2rem;
+}
+.ExploreMenu-text{
+    max-width: 90%;
+    color: rgb(16, 13, 13);
+    font-size:1.1vw;
+    margin-bottom: 1.5vw;
+}
+.ExploreMenu-list{
+display: flex;
+gap: 3vw;
+}
+/* //if scrolling comes than we can remove it by using 
+.ExploreMenu-list::-webkit-scrollbar{
+display: none;
+} */
+.ExploreMenu-list-items img{
+    border-radius: 50%;
+    transition: 0.2s;
+    cursor: pointer;
+    /* width: 9.5vw;
+    max-width: 100px; */
+}
+.ExploreMenu-list-items p{
+margin-left:2.1vw ;
+margin-top: 1vw;
+cursor: pointer;
+font-size: max(1.4vw,16px);
+}
+.ExploreMenu hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: rgb(201, 205, 209);
+    border: none;
+}
+.ExploreMenu-list-items .active{
+border: 4px solid rgb(56, 96, 41);
+}
+
+
+@media (max-width: 1024px) {
+    .ExploreMenu h2 {
+        font-size: 1.75rem;
+    }
+
+    .ExploreMenu-text {
+        max-width: 100%;
+        font-size: 1.5vw;
+    }
+    .ExploreMenu-list {
+        flex-wrap: wrap;
+        gap: 4vw;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .ExploreMenu h2 {
+        font-size: 1.5rem;
+    }
+
+    .ExploreMenu-text {
+        font-size: 2vw;
+    }
+
+    .ExploreMenu-list {
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+
+    .ExploreMenu-list-items img {
+        width: 15vw;
+    }
+
+    .ExploreMenu-list-items p {
+        font-size: max(2.5vw, 12px);
+        margin-left: 1vw;
+        margin-top: 0.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .ExploreMenu h2 {
+        font-size: 1.25rem;
+    }
+
+    .ExploreMenu-text {
+        font-size: 3vw;
+    }
+
+    .ExploreMenu-list {
+        flex-wrap: wrap;
+        gap: 1.5vw;
+    }
+
+    .ExploreMenu-list-items img {
+        width: 20vw;
+    }
+
+    .ExploreMenu-list-items p {
+        font-size: max(3.5vw, 10px);
+        margin-left: 1vw;
+        margin-top: 0.5vw;
+    }
+}
