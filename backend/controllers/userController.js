@@ -52,7 +52,6 @@ try{
     }
 
     //hashing user pasword
-    // const salt =await argon2.genSalt(10)
     const hashedPassword =await argon2.hash(password);
 
     const newUser = new userModel({
