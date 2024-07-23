@@ -1,9 +1,9 @@
 import userModel from "../models/userModel.js";
 import jwt from "jsonwebtoken"
-import bcrypt from "bcrypt"
+// import bcryptjs from "bcryptjs"
 import validator from "validator"
 import "dotenv/config"
-
+import argon2 from 'argon2';
 
 //login user
 
@@ -16,7 +16,7 @@ const loginUser = async(req,res)=>{
         return res.json({success:false,message:"User doesn't exist"})
     }
 
-    const isMatch =await bcrypt.compare(password,user.password);
+    const isMatch =await argon2.compare(password,user.password);
 
     if(!isMatch){
 return res.json({success:false,message:"Invalid credentials"})
@@ -52,8 +52,8 @@ try{
     }
 
     //hashing user pasword
-    const salt =await bcrypt.genSalt(10)
-    const hashedPassword =await bcrypt.hash(password,salt);
+    const salt =await argon2.genSalt(10)
+    const hashedPassword =await argon2.hash(password,salt);
 
     const newUser = new userModel({
         name:name,
