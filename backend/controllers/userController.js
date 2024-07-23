@@ -16,7 +16,7 @@ const loginUser = async(req,res)=>{
         return res.json({success:false,message:"User doesn't exist"})
     }
 
-    const isMatch =await argon2.compare(password,user.password);
+    const isMatch =await argon2.verify(user.password, password);;
 
     if(!isMatch){
 return res.json({success:false,message:"Invalid credentials"})
@@ -52,8 +52,8 @@ try{
     }
 
     //hashing user pasword
-    const salt =await argon2.genSalt(10)
-    const hashedPassword =await argon2.hash(password,salt);
+    // const salt =await argon2.genSalt(10)
+    const hashedPassword =await argon2.hash(password);
 
     const newUser = new userModel({
         name:name,
