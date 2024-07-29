@@ -11,7 +11,7 @@ import { ToastContainer} from 'react-toastify';
 
 const App = () => {
 
-  const url = "http://localhost:4000";
+  const url = "https://food-delivery-3-1p9z.onrender.com";
 
   return (
     <div className='App'>
