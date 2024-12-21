@@ -63,7 +63,7 @@ This is a food ordering web application built with the MERN (MongoDB, Express.js
     ```bash
     # Backend
     cd backend
-    npm run dev
+    npm start
 
     # Frontend
     cd ../frontend
@@ -108,6 +108,8 @@ We welcome contributions to make this project better! Please follow these guidel
     - Push your changes to your forked repository.
     - Open a pull request with a detailed description of your changes.
 7. **Review and Feedback**: Collaborate to review and improve your contribution.
+
+See the [CONTRIBUTION](https://github.com/BhoomiAgrawal12/food-delivery/blob/main/CONTRIBUTING.md) file for more details.
 
 ---
 
