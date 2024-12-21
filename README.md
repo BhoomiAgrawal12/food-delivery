@@ -40,7 +40,7 @@ This is a food ordering web application built with the MERN (MongoDB, Express.js
 1. Clone the repository:
     ```bash
     git clone https://github.com/BhoomiAgrawal12/food-delivery.git
-    cd food-ordering-website
+    cd food-delivery
     ```
 2. Install dependencies for the frontend and backend:
     ```bash
