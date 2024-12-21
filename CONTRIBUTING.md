@@ -10,7 +10,7 @@ Thank you for considering contributing to the Food Delivery Website project! Thi
 ### Clone Your Fork
 - Clone your forked repository to your local machine:
   ```bash
-  git clone https://github.com/BhoomiAgrawal12/food-delivery.git
+  git clone https://github.com/<username>/food-delivery.git
   cd food-delivery
   ```
 
